@@ -1,2 +1,2 @@
 # WEB-DEV-2024
-Contains Projects related to web development.
+Contains Project Folders related to Full stack web development.
