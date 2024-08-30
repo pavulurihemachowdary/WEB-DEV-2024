@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get element by class name</title>
+    </head>
+    <body>
+        <form onsubmit="return check()">
+            <input type="checkbox" id="id1" class="msgcheckbox" value="whatsapp">whatsapp
+            <input type="checkbox" id="id2" class="msgcheckbox" value="facebook">facebook
+            <input type="checkbox" id="id3" class="msgcheckbox" value="insta">insta
+            <input type="submit" id="submit" value="submit">
+            <div id="div1"></div>
+        </form>
+        <script>
+            function check(){
+                var values=document.getElementsByClassName("msgcheckbox");
+                document.getElementById("div1").innerHTML="you have selected:<br/>";
+                for(var i=0;i<values.length;i++){
+                    if(values[i].checked){
+                        document.getElementById("div1").innerHTML+=values[i].value+"<br/>";
+                    }
+                }
+                return false;
+            }
+        </script>
+    </body>
+</html>

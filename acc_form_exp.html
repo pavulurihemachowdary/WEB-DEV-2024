@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Accenture form Example</title>
+    </head>
+    <body>
+        <h2>HTML Forms</h2>
+        <form target="_blank"  method="get" autocomplete="on">
+            <fieldset>
+                <legend>Name: </legend>
+                <label for="fname">first name</label>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">last name</label>
+                <input type="text" id="lname" name="lname" value="chowdary"><br>
+            </fieldset><br>
+            <label for="emailid">Enter your email id: </label>
+            <input type="email" id="emailid" name="emailid"><br><br>
+            <label for="fav">Which flowers do you like?</label>
+            <select id="fav" name="fav">
+                <optgroup label="India">
+                    <option value="lily">lily</option>
+                    <option value="rose">rose</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="lily">lavender</option>
+                    <option value="rose">rosemary</option>
+                </optgroup>
+            </select><br><br>
+            <label for="fav_num">what is your lucky number</label>
+            <input type="number" id="fav_num" name="fav_num"><br><br>
+            <label for="bithday">Birthday: </label>
+            <input type="date" id="bithday" name="bithday"><br><br>
+            <label for="phn">Enter phn number: </label>
+            <input type="tel" id="phn" name="phn" placeholder="123-456-789" title="please fill in format"><br><br>
+            <label for="add">address: </label>
+            <textarea name="add" id="add" rows="10" cols="10"></textarea><br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+        </form>
+    </body>
+</html>
